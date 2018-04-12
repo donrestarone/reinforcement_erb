@@ -1,17 +1,15 @@
-<label for="email">email</label>
-<input type="text" name="email" id="email" class="fancy_form" >
+<% labels = ['email', 'username', 'pin', 'website', 'address', 'alias' ] %>
 
-<label for="username">username</label>
-<input type="text" name="username" id="username" class="fancy_form" >
 
-<label for="pin">pin</label>
-<input type="text" name="pin" id="pin" class="fancy_form"
+<% labels.each do |sticker| %>
 
-<label for="website">website</label>
-<input type="text" name="website" id="website" class="fancy_form" >
+	<label for= <%= sticker %> ><%=sticker%></label>
+<input type="text" name= <%= sticker %> id= <%= sticker %> class="fancy_form" >  
 
-<label for="address">address</label>
-<input type="text" name="address" id="address" class="fancy_form" >
+<% end %> 
 
-<label for="alias">alias</label>
-<input type="text" name="alias" id="alias" class="fancy_form" >
+<h1> unfactored </h1>
+
+
+
+
